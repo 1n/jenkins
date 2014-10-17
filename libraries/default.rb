@@ -1,7 +1,7 @@
 class Chef
   class Provider
 		def getData()
-			Chef::Log.debug("Log leve: debug")
+			Chef::Log.debug("Log level: debug")
 			@slaves_params = Hash.new
 			collect_data = partial_search(:node, 'role:jenkins_slave',
 				:keys => {
